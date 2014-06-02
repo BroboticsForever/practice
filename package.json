@@ -1,0 +1,21 @@
+{
+    "name":"practice",
+    "private" : false,
+    "version":"0.0.1",
+    "description":"Practice Repository",
+    "main":"index.js",
+    "repository":{
+        "type":"git",
+        "url":"git@github.com:BroboticsForever/practice.git"
+    },
+    "scripts": {
+
+    },
+    "dependencies": {
+        "express": "4.2.x",
+        "winston":"0.7.x"
+    },
+    "devDependencies": {
+
+    }
+}
