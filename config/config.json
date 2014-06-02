@@ -1,0 +1,6 @@
+{
+    "Message1":"This is message 1",
+    "Message2":"This is message 2",
+    "LoggingLevel":"debug",
+    "LogFile":"logger/logs/practiceLog.log"
+}
