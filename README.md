@@ -57,6 +57,16 @@ Running and making changes to the repo
     $ npm install
         
    In the main directory of your repository. This command checks the "package.json" file in the repo to find what dependencies are necessary, and automatically downloads and installs them.
+   Now, because it is defined in the ".gitignore" file to ignore any folder called "logs", we must add our own logs folder. This folder must be added in the "logger" directory. 
+   Now to run the application, enter:
+   
+    $ node app
+    
+   The console should hang if everything works properly. In order to test that everything is going correctly, open a browser and go to the URL:
+   
+    http://localhost:3030/page1     or      http://localhost:3030/anotherpage
+    
+   Both pages should display a single line message, and also output this message to the console when they are accessed.
     
 9) You are now ready to begin making changes to our repository! However, by default you are on the "master" branch of the repository.
    It is not good practice to directly change the master branch, so if you wish to make changes to the repo please create a new branch for your changes.
