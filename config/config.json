@@ -2,5 +2,6 @@
     "Message1":"You just loaded page1 successfully!",
     "Message2":"You just loaded anotherpage successfully!",
     "LoggingLevel":"debug",
-    "LogFile":"logger/logs/practiceLog.log"
+    "LogFile":"logger/logs/practiceLog.log",
+    "ListenPort":"3030"
 }
