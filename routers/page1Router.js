@@ -7,13 +7,22 @@ router.get('/page1', homepage);
 router.get('/anotherpage', anotherPage);
 
 function homepage(req, res) {
-    res.send(config.Message1);
+    res.render(__dirname + "/page1.handlebars");
 
     logger.info(config.Message1);
 }
 
 function anotherPage(req, res) {
-    res.send(config.Message2);
+    var html = "<!DOCTYPE html>" +
+        "<html lang=\"en\">" +
+            "<head><title>Another Page</title></head>" +
+            "<body>" +
+                "This is the body of anotherpage! <br>" +
+                "<a href=\"http://localhost:3030/page1\">Click here to go back.</a>"
+            "</body>" +
+        "</html>";
+
+    res.send(html);
 
     logger.info(config.Message2);
 }
