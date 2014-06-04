@@ -3,5 +3,6 @@
     "Message2":"You just loaded anotherpage successfully!",
     "LoggingLevel":"debug",
     "LogFile":"logger/logs/practiceLog.log",
-    "ListenPort":"3030"
+    "ListenPort":"3030",
+    "APIHost":"http://localhost:3030"
 }

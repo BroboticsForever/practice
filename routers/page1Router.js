@@ -18,7 +18,7 @@ function anotherPage(req, res) {
             "<head><title>Another Page</title></head>" +
             "<body>" +
                 "This is the body of anotherpage! <br>" +
-                "<a href=\"http://localhost:3030/page1\">Click here to go back.</a>"
+                "<a href=\"" + config.APIHost + "/page1\">Click here to go back.</a>"
             "</body>" +
         "</html>";
 
