@@ -96,8 +96,17 @@ Running and making changes to the repo:
         
        The message should contain enough information that someone else can know what you did without having to delve into your code.
     
-   10) Finally, you need to push these changes to a branch in the github.com repo.  This is done by simply entering:
+   10) Finally, you need to push these changes to a branch in the github.com repo.  This is done by first entering:
         
+        $ git config --global push.default simple
+        
+       This will set up the default push options as simple (this only needs to be done once, not every time you push).
+       Then, in order to set up the branch on github.com to push to, enter:
+        
+        $ git push --set-upstream origin <nameOfYourCurrentBranch>
+        
+       This also only needs to be done once per branch, not on every push. Finally, we can call the push command:
+       
         $ git push
         
-       
+   11) Congratulations, you are now a git wizard! AKA, a Gizard.
