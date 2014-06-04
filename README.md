@@ -109,4 +109,14 @@ Running and making changes to the repo:
        
         $ git push
         
-   11) Congratulations, you are now a git wizard! AKA, a Gizard.
+Final Notes:
+
+   11) The next time you want to make changes to the repository, you will need to make sure that your local repository is up to date with the github.com repository, because other people could have made changes while you were away.
+       In order to do this, before anything else is done, switch to your master branch and enter:
+       
+        $ git pull
+        
+       This command will pull the latest version of the repository from github.com.
+       Now you should create another branch off of master (keep in mind that you create a new branch, you are branching off of your current branch).
+   
+   12) You are now ready to begin making the changes you want to! Congratulations, you are now a Gizard! (Gizard = git wizard)
