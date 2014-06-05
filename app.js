@@ -13,3 +13,5 @@ app.use('*', middleware.authenticate); //set to authenticate on every page
 app.use('/', page1Router); //
 
 app.listen(config.ListenPort);
+
+console.log("Web server now listening on port 3030:");
