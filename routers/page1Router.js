@@ -22,7 +22,7 @@ function anotherPage(req, res) {
         "<html lang=\"en\">" +
             "<head><title>Another Page</title></head>" +
             "<body>" +
-                "This is the body of anotherpage! <br>" +
+                "<h1>" + config.Message2 + "</h1>" +
                 "<a href=\"" + config.APIHost + "/page1\">Click here to go back.</a>"
             "</body>" +
         "</html>";
