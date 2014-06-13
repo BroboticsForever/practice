@@ -7,7 +7,12 @@ router.get('/page1', homepage);
 router.get('/anotherpage', anotherPage);
 
 function homepage(req, res) {
-    res.render(__dirname + "/page1.handlebars");
+    var context = {
+        title: 'Page1',
+        message: config.Message1
+    };
+
+    res.render("page1", context);
 
     logger.info(config.Message1);
 }
