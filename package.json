@@ -14,8 +14,7 @@
     "dependencies": {
         "express": "4.2.x",
         "winston":"0.7.x",
-        "consolidate":"0.10.x",
-        "handlebars":"2.0.x"
+        "express3-handlebars":"0.5.x"
     },
     "devDependencies": {
 
