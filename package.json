@@ -1,22 +1,17 @@
 {
-    "name":"practice",
-    "private" : false,
-    "version":"0.0.1",
-    "description":"Practice Repository",
-    "main":"index.js",
-    "repository":{
-        "type":"git",
-        "url":"git@github.com:BroboticsForever/practice.git"
-    },
-    "scripts": {
-
-    },
-    "dependencies": {
-        "express": "4.2.x",
-        "winston":"0.7.x",
-        "express3-handlebars":"0.5.x"
-    },
-    "devDependencies": {
-
-    }
+  "name": "practice",
+  "description": "This is a practice for my main webb application",
+  "version": "0.0.1",
+  "private": "false",
+  "author": "Ian Tait <thetaiter@gmail.com>",
+  "engines": {
+    "node": "0.10.36",
+    "npm": "1.4.28"
+  },
+  "dependencies": {
+    "express": "^4.11.2",
+    "mongoose": "^3.8.22",
+    "body-parser": "^1.11.0",
+    "method-override": "^2.3.1"
+  }
 }
