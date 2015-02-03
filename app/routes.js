@@ -1,16 +1,13 @@
 module.exports = function(app) {
-    //
-    //Server Routes
-    //
-    
-    
-    
-    //
-    //Front End Routes
-    //
 
-    //Route to handle all angular requests
-    app.get('*', function(req, res) {
-        res.sendFile('./public/index.html');
-    });
-}
+	// server routes ===========================================================
+	// handle things like api calls
+	// authentication routes
+
+	// frontend routes =========================================================
+	// route to handle all angular requests
+	app.get('*', function(req, res) {
+		res.sendfile('./public/index.html');
+	});
+
+};
