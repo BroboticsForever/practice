@@ -26,4 +26,5 @@ node_modules
 
 #other
 .idea/
+bower_components/
 *.swp

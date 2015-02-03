@@ -1,3 +1,3 @@
 module.exports = {
-	url : 'mongodb://<user>:<pass>@mongo.onmodulus.net:27017/uw45mypu'
+    url: 'mongodb://broDBuser:Br0b0tics@ds039441.mongolab.com:39441/brobotics-main'
 }
