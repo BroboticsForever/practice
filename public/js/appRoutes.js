@@ -8,15 +8,20 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'MainController'
 		})
 
-		.when('/nerds', {
-			templateUrl: 'views/nerd.html',
-			controller: 'NerdController'
+		.when('/links', {
+			templateUrl: 'views/links.html',
+			controller: 'LinksController'
 		})
 
-		.when('/geeks', {
-			templateUrl: 'views/geek.html',
-			controller: 'GeekController'	
-		});
+		.when('/about', {
+			templateUrl: 'views/about.html',
+			controller: 'AboutController'
+		})
+
+		.otherwise({
+		    templateUrl: 'views/notfound.html',
+			controller: 'NotFoundController'
+        });
 
 	$locationProvider.html5Mode(true);
 

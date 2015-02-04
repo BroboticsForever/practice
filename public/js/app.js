@@ -1,1 +1,1 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'NerdService', 'GeekCtrl', 'GeekService']);
+angular.module('broboticsApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'LinksCtrl', 'LinksService', 'AboutCtrl', 'AboutService', 'NotFoundCtrl', 'NotFoundService']);
