@@ -17,18 +17,15 @@ if ((cluster.isMaster) && process.argv.indexOf('--singleProcess') < 0 && env != 
     });
 } else {
     var workerId = 0;
+    var express = require('express');
+    var app = express();
+    var bodyParser = require('body-parser');
+    var methodOverride = require('method-override');
+    var port = process.env.PORT || 3000;
+
     if (!cluster.isMaster) {
         workerId = cluster.worker.id;
     }
-
-    var express = require('express');
-    var app = express();
-    var mongoose = require('mongoose');
-    var bodyParser = require('body-parser');
-    var methodOverride = require('method-override');
-    var db = require('./config/db');
-    var port = process.env.PORT || 3000;
-
 
     app.use(bodyParser.json());
     app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
