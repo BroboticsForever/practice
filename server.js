@@ -1,7 +1,7 @@
 var cluster = require('cluster');
 var env = process.env.NODE_ENV || 'development';
 
-if ((cluster.isMaster) && process.argv.indexOf('--singleProcess') < 0 && env != 'development') {
+if ((cluster.isMaster) && process.argv.indexOf('--single-process') < 0 && env != 'development') {
     console.log("Forking processes for each CPU...");
 
     var numCPUs = require('os').cpus().length;
